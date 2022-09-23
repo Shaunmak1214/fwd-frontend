@@ -13,7 +13,13 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<CustomRoutes header component={Screens.Home} />}
+          element={
+            <CustomRoutes
+              header={true}
+              footer={false}
+              component={Screens.Home}
+            />
+          }
         />
         <Route
           path="/login"

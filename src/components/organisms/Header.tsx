@@ -8,6 +8,7 @@ import {
   Link,
   Heading,
 } from '@chakra-ui/react';
+import { Select } from '@chakra-ui/react';
 
 const Header = () => {
   const headerSticky = useRef<HTMLDivElement>(null);
@@ -52,30 +53,18 @@ const Header = () => {
       id="header"
       ref={headerSticky}
     >
-      <Container maxW="95%">
+      <Container maxW="container.xl">
         <HStack justifyContent={'space-between'} alignItems="center">
           <Box onClick={() => (window.location.href = '/')} cursor="pointer">
             <Heading fontSize="1.2rem" fontWeight={'bold'}>
-              Company Name
+              FWD Insurance Reviews Analytics
             </Heading>
           </Box>
-          <Box w="50%">
-            <HStack justifyContent={'space-between'}>
-              <Link href="#">
-                <Text>About</Text>
-              </Link>
-              <Link href="#">
-                <Text>Raodmap</Text>
-              </Link>
-              <Link href="#">
-                <Text>Why Us</Text>
-              </Link>
-              <Box borderRight="2px solid #000000" h="20px"></Box>
-              <Link href="#">
-                <Text>Sign Up</Text>
-              </Link>
-            </HStack>
-          </Box>
+          <Select placeholder="Select option" w="30%">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </Select>
         </HStack>
       </Container>
     </Center>

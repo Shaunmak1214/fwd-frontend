@@ -21,7 +21,7 @@ const theme = extendTheme({
     '9xl': '8rem',
   },
   sizes: {
-    'container.xl': '1200px',
+    'container.xl': '1400px',
     'container.form': '550px',
   },
   components: {

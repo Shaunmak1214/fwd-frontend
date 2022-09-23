@@ -6,6 +6,11 @@ import HideIcon from './svgs/HideIcon.svg';
 import PasswordIcon from './svgs/PasswordIcon.svg';
 import EmailIcon from './svgs/EmailIcon.svg';
 
+import Reviews from './pngs/review.png';
+import Good from './pngs/good.png';
+import Bad from './pngs/bad.png';
+import AgeGroup from './pngs/age.png';
+
 import LoginGraphic from './images/login-graphic.jpg';
 
 export {
@@ -17,4 +22,8 @@ export {
   HideIcon,
   PasswordIcon,
   EmailIcon,
+  Reviews,
+  Good,
+  Bad,
+  AgeGroup,
 };
